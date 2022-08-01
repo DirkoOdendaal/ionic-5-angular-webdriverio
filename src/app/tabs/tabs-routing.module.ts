@@ -14,6 +14,11 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+          },
+          {
+            path: 'success',
+            loadChildren: () =>
+              import('../tab1/tab1-success/tab1-success.module').then(m => m.Tab1SuccessPageModule)
           }
         ]
       },
