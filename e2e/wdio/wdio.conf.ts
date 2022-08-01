@@ -67,7 +67,7 @@ export const config = {
   // will be called from there.
   //
   specs: [
-      './e2e/wdio2/src/specs/**/*.ts'
+      './e2e/wdio/src/specs/**/*.ts'
   ],
   // Patterns to exclude.
   exclude: [
