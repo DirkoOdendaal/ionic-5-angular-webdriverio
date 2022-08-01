@@ -1,3 +1,5 @@
+import * as path from 'path'
+
 export const config = {
     // specs: [
     //   './src/specs/**/*.ts'
@@ -12,7 +14,7 @@ export const config = {
     // },
     // logLevel: 'debug',
     // runner: 'local',
-    // outputDir: path.resolve(__dirname, 'logs'),
+    outputDir: path.resolve(__dirname, 'logs'),
     // reporters: ['spec'],
 
 
