@@ -6,7 +6,8 @@ describe('auth form', () => {
         await Tab1Page.open()
         await browser.setWindowSize(320, 568);
         const submitButton = await $(Tab1Page.submitButton)
-        await submitButton.click()
+        // This actually scrolls element into view and clicks on button 
+        await submitButton.click({})
 
         const successMessage = await $(Tab1SuccessPage.successMessage)
         await successMessage.waitForDisplayed()
